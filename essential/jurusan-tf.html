@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Jurusan Farmasi - SMKN 15 Bekasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none;">
+                    <img src="../Image/logo SMKN 15 Kota Bekasi.png" alt="Logo" style="height: 45px;">
+                    <span style="font-weight: 700; font-size: 1.1rem; color: var(--primary-color); line-height: 1.2;">SMK NEGERI 15 <br><small>KOTA BEKASI</small></span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Beranda/index.html#beranda">Beranda</a></li>
+                <li><a href="Beranda/index.html#jadwal">Jadwal</a></li>
+                <li><a href="Beranda/index.html#jurusan" class="active">Jurusan</a></li>
+                <li><a href="Beranda/index.html#syarat">Persyaratan</a></li>
+            </ul>
+            <a href="https://ppdb.jabarprov.go.id/" target="_blank" class="btn-daftar">Daftar PPDB</a>
+        </div>
+    </nav>
+
+    <header class="jurusan-header-detail" style="background-color: #27ae60;">
+        <div class="container">
+            <h1>Teknologi Farmasi (TF)</h1>
+            <p>Menghasilkan tenaga teknis kefarmasian yang kompeten, teliti, dan beretika.</p>
+            
+            <a href="beranda/index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+            </a>
+        </div>
+    </header>
+
+    <main class="jurusan-content-container">
+        <div class="container">
+            <section class="detail-section">
+                <h2><i class="fas fa-info-circle"></i> Deskripsi Jurusan</h2>
+                <p>Jurusan Teknologi Farmasi SMKN 15 Bekasi (Terakreditasi A) menyiapkan siswa menjadi tenaga menengah di bidang kesehatan yang terampil dalam pelayanan kefarmasian. Siswa akan mempelajari cara pembuatan, pengolahan, peracikan, hingga penyerahan obat di bawah pengawasan Apoteker.</p>
+            </section>
+            <section class="detail-section">
+                <h2><i class="fas fa-book"></i> Materi Pokok / Kurikulum</h2>
+                <ul class="detail-list">
+                    <li>Dasar-dasar Kefarmasian dan Farmakologi.</li>
+                    <li>Pelayanan Farmasi (Ilmu Resep & Komunikasi Kesehatan).</li>
+                    <li>Farmakognosi (Obat Tradisional & Herbal).</li>
+                    <li>Kimia Farmasi Analisis Dasar.</li>
+                    <li>Administrasi Farmasi dan Manajemen Apotek Dasar.</li>
+                </ul>
+            </section>
+            <section class="detail-section">
+                <h2><i class="fas fa-briefcase"></i> Prospek Kerja</h2>
+                <ul class="detail-list">
+                    <li>Asisten Tenaga Kefarmasian di Apotek, Puskesmas, atau Rumah Sakit.</li>
+                    <li>Operator Produksi di Industri Farmasi/Obat Tradisional.</li>
+                    <li>Tenaga Administrasi Gudang Farmasi (PBF).</li>
+                    <li>Asisten Peneliti di Laboratorium Pengujian Mutu Obat.</li>
+                </ul>
+            </section>
+            <section class="detail-section">
+                <h2><i class="fas fa-university"></i> Jurusan Lanjutan Kuliah</h2>
+                <ul class="detail-list">
+                    <li>S1 Farmasi (untuk menjadi Apoteker).</li>
+                    <li>D3 Farmasi / D3 Analis Farmasi dan Makanan.</li>
+                    <li>S1 Kimia Murni.</li>
+                    <li>S1 Kesehatan Masyarakat.</li>
+                </ul>
+            </section>
+            <section class="detail-section">
+                <h2><i class="fas fa-trophy"></i> Prestasi Lomba</h2>
+                <p>Beberapa capaian prestasi siswa Farmasi:</p>
+                <ul class="detail-list">
+                    <li>Juara 1 LKS Bidang Pharmaceutical Technology Tingkat Kota Bekasi.</li>
+                    <li>Juara 3 Lomba Kompetensi Siswa Farmasi Tingkat Provinsi Jawa Barat.</li>
+                    <li>Juara Lomba Karya Tulis Ilmiah Remaja bidang Kesehatan Herbal.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content" style="display: flex; justify-content: space-between; align-items: center; padding: 30px 0;">
+            <div class="footer-left">
+                <h3 style="color: white;">SMK NEGERI 15 KOTA BEKASI</h3>
+                <p style="color: #ddd;">Jl. Ciketing Udik, Bantargebang, Kota Bekasi.</p>
+            </div>
+            <div class="footer-right">
+                <p style="color: #ddd;">&copy; 2026 Panitia SPMB SMKN 15 Bekasi.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="chat-toggler" onclick="toggleChat()"><span class="icon-chat">💬</span><span class="icon-close">✖</span></button>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header"><div class="header-info"><span>Asisten Sekolah</span></div><button onclick="toggleChat()" class="close-btn">✖</button></div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-footer"><input type="text" id="userInput"><button onclick="sendMessage()" class="send-btn">➤</button></div>
+    </div>
+    <script src="chatbot_data.js"></script>
+    <script src="chatbot_logic.js"></script>
+</body>
+</html>

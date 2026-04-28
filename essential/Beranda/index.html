@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPMB SMKN 15 Kota Bekasi 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="../../Image/logo SMKN 15 Kota Bekasi.png" alt="Logo"> <span>SMK NEGERI 15 <br><small>KOTA BEKASI</small></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#jadwal">Jadwal & Kuota</a></li>
+                <li><a href="#jurusan">Jurusan</a></li>
+                <li><a href="#syarat">Info Pendaftaran</a></li>
+            </ul>
+            <a href="https://ppdb.jabarprov.go.id/" target="_blank" class="btn-daftar">Daftar Sekarang</a>
+        </div>
+    </nav>
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Jika scroll ke bawah lebih dari 80px, sembunyikan
+            if (scrollTop > lastScrollTop && scrollTop > 80) {
+                navbar.style.top = "-100px"; // Sesuaikan dengan tinggi navbar Anda
+            } else {
+                // Jika scroll ke atas, munculkan kembali
+                navbar.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+    <header id="beranda" class="hero-section">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('../../Image/image slider/gedung-sekolah.png');"></div>
+            <div class="slide" style="background-image: url('../../Image/image slider/ruang guru dll.jpeg');"></div>
+            </div>
+
+        <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="hero-content">
+            <span class="badge-year">TAHUN AJARAN 2026/2027</span>
+            <h1>Penerimaan Peserta Didik Baru<br>SMKN 15 Kota Bekasi</h1>
+            <p>Wujudkan Generasi Mandiri, Berkarakter, dan Loyalitas bersama Sekolah Pusat Keunggulan.</p>
+            <div class="hero-buttons">
+                <a href="#jadwal" class="btn-primary">Lihat Jadwal</a>
+                <a href="#syarat" class="btn-secondary">Syarat Pendaftaran</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="video-profil" class="info-section" style="background-color: var(--white);">
+         <div class="container">
+        <h2 class="section-title">Video Profil Terbaru</h2>
+        <p class="section-subtitle">Tonton video informasi dan kegiatan terbaru dari channel resmi SMKN 15 Kota Bekasi.</p>
+        
+        <div class="video-container" style="position: relative; max-width: 800px; margin: 0 auto;">
+            <a href="https://www.youtube.com/watch?v=HmUqo-V3H_c" target="_blank" rel="noopener" style="display: block; position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <img src="https://img.youtube.com/vi/HmUqo-V3H_c/maxresdefault.jpg" alt="Thumbnail Video Profil" style="width: 100%; display: block; transition: transform 0.3s ease;">
+                
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background-color: rgba(255, 0, 0, 0.9); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                    <div style="width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 20px; border-color: transparent transparent transparent #ffffff;"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    </section>
+
+    <section id="jadwal" class="info-section">
+        <div class="container">
+            <h2 class="section-title">Informasi SPMB 2026</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="icon-box"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Jadwal Pelaksanaan</h3>
+                    <ul>
+                        <li><strong>Tahap 1:</strong> 10 - 16 Juni 2026<br><small>(Domisili, Afirmasi, Mutasi)</small></li>
+                        <li><strong>Pengumuman T1:</strong> 19 Juni 2026</li>
+                        <li><strong>Tahap 2:</strong> 24 Juni - 1 Juli 2026<br><small>(Jalur Prestasi)</small></li>
+                        <li><strong>Masuk Sekolah:</strong> 14 Juli 2026</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Kuota Penerimaan</h3>
+                    <ul>
+                        <li><strong>Jalur Prestasi:</strong> 55%</li>
+                        <li><strong>Jalur Afirmasi:</strong> 30%</li>
+                        <li><strong>Domisili Terdekat:</strong> 10%</li>
+                        <li><strong>Perpindahan Tugas:</strong> 5%</li>
+                    </ul>
+                </div>
+                <div class="info-card highlight">
+                    <div class="icon-box"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Syarat & Ketentuan</h3>
+                    <ul>
+                        <li><strong>Batas Usia:</strong> Maksimal 21 Tahun (per 1 Juli 2026)</li>
+                        <li><strong>Keabsahan:</strong> Dokumen yang diunggah wajib asli</li>
+                        <li><strong>Prosedur:</strong> Pendaftaran wajib melalui sistem online</li>
+                        <li><strong>Keputusan:</strong> Hasil seleksi panitia bersifat mutlak</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jurusan" class="jurusan-section">
+        <div class="container">
+            <h2 class="section-title">Kompetensi Keahlian</h2>
+            <p class="section-subtitle">Klik pada jurusan untuk melihat detail lengkap kurikulum dan prospek kerja.</p>
+            <div class="jurusan-grid">
+                <a href="../jurusan-tjkt.html" class="jurusan-card">
+                    <div class="card-img" style="background-color: #e74c3c;"><i class="fas fa-network-wired"></i></div>
+                    <h4>TJKT</h4>
+                    <p>Teknik Jaringan Komputer & Telekomunikasi</p>
+                </a>
+                
+                <a href="../jurusan-tf.html" class="jurusan-card">
+                    <div class="card-img" style="background-color: #27ae60;"><i class="fas fa-flask"></i></div>
+                    <h4>Farmasi (TF)</h4>
+                    <p>Teknologi Farmasi (Akreditasi A)</p>
+                </a>
+
+                <a href="../jurusan-tm.html" class="jurusan-card">
+                    <div class="card-img" style="background-color: #f39c12;"><i class="fas fa-cogs"></i></div>
+                    <h4>Teknik Mesin</h4>
+                    <p>Teknik Mekanik Industri</p>
+                </a>
+
+                <a href="../jurusan-titl.html" class="jurusan-card">
+                    <div class="card-img" style="background-color: #3498db;"><i class="fas fa-bolt"></i></div>
+                    <h4>TITL</h4>
+                    <p>Teknik Instalasi Tenaga Listrik</p>
+                </a>
+
+                <a href="../jurusan-kds.html" class="jurusan-card">
+                    <div class="card-img" style="background-color: #9b59b6;"><i class="fas fa-spa"></i></div>
+                    <h4>KDS</h4>
+                    <p>Kecantikan dan Spa</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="syarat" class="jurusan-section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Informasi Pendaftaran</h2>
+            <p class="section-subtitle">Klik kartu di bawah untuk melihat Panduan Lengkap & Regulasi SPMB 2026.</p>
+            
+            <div class="jurusan-grid" style="justify-content: center;">
+                <a href="../informasi-pendaftaran.html" class="jurusan-card" style="width: 300px;">
+                    <div class="card-img" style="background-color: var(--primary-color);">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h4>Panduan Lengkap SPMB</h4>
+                    <p>Klik disini untuk melihat 10 Poin Penting, Syarat Detail, dan Alur Pendaftaran.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi & Kontak</h2>
+            <p class="section-subtitle">Kunjungi kami atau hubungi panitia untuk info lebih lanjut.</p>
+            
+            <div class="location-grid">
+                <div class="map-card">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.544865762266!2d107.01369307499116!3d-6.322262993667198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6993ef908906e1%3A0x6336585365510618!2sSMKN%2015%20Kota%20Bekasi!5e0!3m2!1sid!2sid!4v1707800000000!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="350" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="contact-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Alamat Sekolah</h3>
+                    <p>Jl. Kelapa Dua RT 003 RW 008, Padurenan, Kec. Mustika Jaya, Kota Bekasi, Jawa Barat 16340.</p>
+                    <hr>
+                    <h3><i class="fas fa-headset"></i> Layanan Informasi</h3>
+                    <p>Butuh bantuan pendaftaran? Chat langsung dengan Panitia SPMB via WhatsApp.</p>
+                    <a href="https://wa.me/6289513585821?text=Halo%20Panitia%20SPMB%20SMKN%2015%20Bekasi,%20saya%20ingin%20bertanya%20tentang%20pendaftaran." target="_blank" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h3>SMK NEGERI 15 KOTA BEKASI</h3>
+                <p>Jl. Ciketing Udik, Bantargebang, Kota Bekasi.</p>
+                <p>WA: 0812-3456-7890</p>
+            </div>
+            <div class="footer-right">
+                <p>© 2026 Panitia SPMB SMKN 15 Bekasi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="chat-toggler" onclick="toggleChat()">
+        <span class="icon-chat">💬</span>
+        <span class="icon-close">✖</span>
+    </button>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="header-info">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Bot Icon" class="bot-avatar">
+                <span>Asisten Sekolah</span>
+            </div>
+            <button onclick="toggleChat()" class="close-btn">✖</button>
+        </div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Tanya SPMB..." onkeypress="handleEnter(event)">
+            <button onclick="sendMessage()" class="send-btn">➤</button>
+        </div>
+    </div>
+
+    <script src="../chatbot_data.js"></script>
+    <script src="../chatbot_logic.js"></script>
+
+   <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        let slideInterval;
+
+        // Fungsi untuk menampilkan slide tertentu
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            // Logika agar index berputar (kembali ke 0 jika kelebihan, kembali ke akhir jika kurang dari 0)
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Fungsi berpindah ke slide berikutnya
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        // Fungsi saat tombol manual ditekan
+        function changeSlide(step) {
+            showSlide(currentSlide + step);
+            resetInterval(); // Reset waktu agar tidak langsung ganti gambar setelah diklik
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000); // 5000 ms = 5 detik
+        }
+
+        // Jalankan slide otomatis pertama kali
+        slideInterval = setInterval(nextSlide, 5000);
+    </script>
+
+</body>
+</html>
